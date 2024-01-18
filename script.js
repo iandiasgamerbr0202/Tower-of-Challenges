@@ -1,29 +1,50 @@
-const { title } = require("process");
+const { title } = require("process"); // I have no idea what this do, and even less how did it showed up.
 const oneAgainstTenProbability = function oneAgainstTenProbability() {
   if (Math.floor(Math.random() * 10) === 0) {
-      positivePoint();
+      positivePoint(); // call positive function;
   } else {
-      negativePoint();
+      negativePoint(); // call negative function;
   }
 };
 function positivePoint() {
   player_target_stats.pride_points += 1;
   return console.log(`${player_target_stats.name} din't payed attention on what you said.`)
-};
+}; //Player treat the target but the target will get mored angry or conficonfident;
 function negativePoint() {
   player_target_stats.pride_points -= 1;
   return console.log(`${player_target_stats.name} was slightly shaken about what you said.`)
-};
+}; 
+/*
+  Player treat the target and the target get a litle scared about what you said;
+*/
 let player_has_attacked = {
-  attack_was_successful: null, //boolean
-  how_much_damage: null, //object.object.object.variable (variable = number)
+  attack_was_successful: null, 
+/* 
+  receive boolean 
+*/
+  how_much_damage: null, 
+/*
+    receive number on a null variable; this is a null example -> object.variable (variable = number) 
+*/
 };
 let this_turn_player_was_attacked = {
-  which_attack: null, //object.variable.string
-  damage_received: null, //number
-  did_he_dodged: null, //boolean
-}; //This variable is completely ready to receive new data and update itself, to see updates use console browser;
-let player_selected_attack = null; //This variable is completely ready to receive new data and update itself, to see updates use console browser;
+  which_attack: null, 
+  /*
+    receive string on a object -> object.object.object.variable (variable = string)
+  */
+  damage_received: null, 
+/* 
+  receive a number
+*/
+  did_he_dodged: null, 
+  /* 
+    receive boolean; 
+  */
+};
+let player_selected_attack = null; 
+/*
+  receive an object
+*/
 let player_stats = {
   name: null,
   gender: null,
@@ -31,6 +52,22 @@ let player_stats = {
   level: 1,
   current_exp: 0,
   max_exp: 50,
+  /*Level and “exp”, but explained:
+    level is when you get a specific amount of experience… example:
+    level 1,
+    current_exp: 49,
+    max_exp: 50,
+    (console: "player killed a giant rat and gained 5 exp")
+    Level 2,
+    current_exp: 4,
+    max_exp: 100,
+    end of example.
+    So, as we can see when the player is at level 1, his maximum experience was 50, and he had 49, and when
+    he killed a giant rat he gains 5 “exp” since 49 + 5 = 54 the game did the calculation and
+    updated the level to +1 and rewrote current_exp to 4 and at the same time set the new
+    max_exp... but how is max “exp” calculated? Simple, it will add the last amount of maximum exp
+    since 50 was the last maximum, it added up to 50 + 50 = 100, so when the player reaches level 3, it will add up
+    100 + 100 = 200 and so on*/
   defense_points: 5,
   current_health_points: 100,
   max_health_points: 100,
@@ -51,7 +88,7 @@ let player_stats = {
     stunned:{},
     weak:{},
   }
-};//This variable is completely ready to receive new data and update itself, to see updates use console browser;
+};
 let player_bag = {
   armor: {
     helmet: null,
@@ -60,7 +97,7 @@ let player_bag = {
     chestArmor: null,
     gloves: null,
     ring1: null,
-    ring2: null,
+    ring2: null,                              //all of these will receive an object;
     ring3: null,
     ring4: null,
     bracelet1: null,
@@ -87,7 +124,10 @@ let player_bag = {
       stunt: player_target_stats.turns_stunned = 1,
       amount: 0,
     },
-    antidote: {},
+    antidote: {
+      effect:player_stats.negative_effect.poisoned = 0,
+      amount:0,
+    },
     space6: null,
     space7: null,
     space8: null,
