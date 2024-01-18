@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'MedievalSharp_Book';
+    src: url('MedievalSharp/MedievalSharp-Book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MedievalSharp_Book_Oblique';
+    src: url('MedievalSharp/MedievalSharp-BookOblique.ttf');
+}
+
+@font-face {
+    font-family: 'MedievalSharp_Bold';
+    src: url('MedievalSharp/MedievalSharp-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'MedievalSharp_Bold_Oblique';
+    src: url('MedievalSharp/MedievalSharp-BoldOblique.ttf');
+}
+
+:root{
+    --MedievalSharp_Book: 'MedievalSharp_Book';
+    --MedievalSharp_Book_Oblique: 'MedievalSharp_Book_Oblique';
+    --MedievalSharp_Bold: 'MedievalSharp_Bold';
+    --MedievalSharp_Bold_Oblique: 'MedievalSharp_Bold_Oblique';
+    --Narrator:rgb(187, 187, 1);
+    --Smiley: rgb(82, 0, 82);
+    --Spike: blue;
+    --Default: black;
+}
+
+body{
+    color: var(--Default);
+    background-color: var(--Default);
+}
+
+#gameScenario{
+    background-color: var(--Default);    
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    font-family: var(--MedievalSharp_Book);
+    text-align: center;
+}
+
+.narrator {
+    color: var(--Narrator);
+}
+
+#chatBox{
+    background-color: rgb(36, 36, 36);
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+}
+
+#create_your_character{
+    background-color: rgb(210, 210, 210);
+    border-color: var(--Default);
+    color: var(--Smiley);
+    border-style: outset;
+}
+
+.smiley {
+    background-color: rgb(239, 215, 255);
+    color: var(--Smiley);
+    font-family: var(--MedievalSharp_Book_Oblique);
+}
+
+.awkward {
+    font-size: xx-small;
+}
