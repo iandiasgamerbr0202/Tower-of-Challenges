@@ -17,6 +17,7 @@ function negativePoint() {
 /*
   Player treat the target and the target get a litle scared about what you said;
 */
+let player_turn = null; //receives boolean.
 let player_has_attacked = {
   attack_was_successful: null, 
 /* 
@@ -124,15 +125,37 @@ let player_bag = {
       stunt: player_target_stats.turns_stunned = 1,
       amount: 0,
     },
-    antidote: {
-      effect:player_stats.negative_effect.poisoned = 0,
+    anti_toxin_syringe: {
+      item_name: " Anti-Toxin Syringe ",
+      effect: player_stats.negative_effect.poisoned = 0,
       amount:0,
     },
-    space6: null,
-    space7: null,
-    space8: null,
-    space9: null,
-    space10: null,
+    herbal_salve: {
+      item_name: "Herbal Save",
+      effect: {
+        heals_by_turn: 5,
+        amount_of_turns: 5,
+        use: function useHerbalSalve() {
+          // Check if it's the player's turn and the item is in hand
+          if (player_turn === true && player_bag.consumables.herbal_salve.amount > 0) {
+            player_stats.current_health_points += player_bag.consumables.herbal_salve.effect.heals_by_turn;
+            console.log(`${player_stats.name} healed ${player_bag.consumables.herbal_salve.effect.heals_by_turn}. Now they have ${player_stats.current_health_points} HP.`);
+        
+            // Reduce the item amount
+            player_bag.consumables.herbal_salve.amount--;
+        
+            // Reset turns if the item is used
+            player_bag.consumables.herbal_salve.current_turn = 0;
+          } else {
+            console.log(`It must be your turn, and you should have the ${player_bag.consumables.herbal_salve.item_name} in hand to use it.`);
+          }
+        } // still on test        
+      }
+    },
+    stimulating_tea: null,
+    toughening_tincture: null,
+    adrenaline_shot: null,
+    smoke_bomb: null,
   },
   weapons: {
     weapon: null,
@@ -179,7 +202,7 @@ let player_bag = {
       },
     },
   },
-};//This variable is completely ready to receive new data and update itself, to see updates use console browser;
+};//This variable is completely ready to receive new data and update itself;
 let player_selected_arrow = /*This variable is completely ready to receive new data and update itself, to see updates use console browser*/ null;
 let player_target_stats = /*Ready to Update*/ {
   name: null,
@@ -287,17 +310,17 @@ let player_moves = {
       on_battle: oneAgainstTenProbability,
       on_map: oneAgainstTenProbability,
     }, // Ready to be called;
-    talk: {}, // Unfinished; Throw Error;
-    give: {}, // Unfinished; Throw Error;
-    lie: {}, // Unfinished; Throw Error;
-    surrender_order: {}, // Unfinished; Throw Error;
-  }, // Unfinished; may throw an Error;
+    talk: {}, // Unfinished;
+    give: {}, // Unfinished;
+    lie: {}, // Unfinished;
+    surrender_order: {}, // Unfinished;
+  }, // Unfinished;
   spare: {
     forgive: {}, // Unfinished; Throw Error;
     spare_target:{}, // Unfinished; Throw Error;
     flee:{}, // Unfinished; Throw Error;
   },
-}; //This variable isn't complete and isn't ready to receive new data and update itself.If used you may get a Fatal Error;
+}; //This variable isn't complete and isn't ready;
 const roles = {
   archer: {
     title: "Imperial Archer",
@@ -530,4 +553,4 @@ const roles = {
    start_bag: {},
   },
 
-};  //This variable isn't complete and isn't ready. If used you get a Fatal Error;
+};  //This variable isn't complete and isn't ready;
