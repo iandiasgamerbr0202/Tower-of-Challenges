@@ -44,16 +44,19 @@ body{
 }
 
 .narrator {
-    color: var(--Narrator);
+    color: var(--Narrator); /*
+        The Narrator is one of the important's characters of the game by now since there is no graphics of the game he is
+        your eyes ears mouth and hands he is everything so he's font text and color must be different.
+    */
 }
-
+/*
 #chatBox{
     background-color: rgb(36, 36, 36);
     border-color: rgb(255, 255, 255);
-    border-width: 1px;
+    border-width: 1px;                      Since there is no graphics this is useles but soon there will be graphics
     border-style: solid;
 }
-
+*/
 #create_your_character{
     background-color: rgb(210, 210, 210);
     border-color: var(--Default);
@@ -65,7 +68,12 @@ body{
     background-color: rgb(239, 215, 255);
     color: var(--Smiley);
     font-family: var(--MedievalSharp_Book_Oblique);
-}
+} /*
+    Smiley is a dangerous character he is going to be responsable for 4º wall breaking, creeping the players and
+    making the game more hard for them, and he is the final boss of the game so he is the most hard character to 
+    use on the history and to display on the game... but since there is no history we just use him on everyere till the player
+    notice that he is a secret character and things like that.
+*/
 
 .awkward {
     font-size: xx-small;
