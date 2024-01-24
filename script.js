@@ -1,4 +1,3 @@
-const { title } = require("process"); // I have no idea what this do, and even less how did it showed up.
 const oneAgainstTenProbability = function oneAgainstTenProbability() {
   if (Math.floor(Math.random() * 10) === 0) {
       positivePoint(); // call positive function;
