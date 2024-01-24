@@ -1,4 +1,4 @@
-#Are You Ready?
+<h1>Are You Ready?</h1>
 
 Tower of Challenges offers a captivating journey in the realm of roguelike RPGs. Set in a fantastical world devoid of magic, the game introduces an extra layer of complexity to unfolding adventures. As you embark on your journey, meticulous character crafting awaits, with choices spanning a diverse array of classes, skills, and attributes.
 
