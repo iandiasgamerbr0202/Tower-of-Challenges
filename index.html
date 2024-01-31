@@ -6,35 +6,28 @@
     <link rel="stylesheet" href="style.css" defer>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
 </head>
-<body>
+<body id="body">
     <div id="root">
         <div id="gameScenario">
             <h1 class="narrator">Welcome to the Tower of Challenges!</h1>
             <p class="narrator">Are you ready for a adventure full of surprises?</p>
-            <p class="narrator">Well, before we start, we're gonna need to know YOU </p>
-            <button id="create_your_character" onclick="create_your_character()">Create YOU</button>
+            <input type="button" value="Yes" onclick="yes()">
+            <input type="button" value="No" onclick="no()"
+            <div id="continued_beggining_conversation"></div>
         </div>
-        <div id="chatBox"></div>
+        <!-- <div id="chatBox"></div> -->
     </div>
     <script>
-        let create_your_character = function(){
-            window.open("create_your_character.html")
-            killStartPage();
-        }        
-        function killStartPage(){
-            document.getElementById("root").innerHTML = `
-            <div><h1 class="narrator">Oh sorry i forgot to say, can you please close the page for us?</h1></div>
+        function yes(){
+            let a = `<p class="narrator">Well, before we start, we neet first to know YOU </p>`;
+            let b = `<button id="create_your_character" onclick="create_your_character()">Create YOU</button>`;
+            document.getElementById("continued_beggining_conversation").innerHTML = `
+            ${a}
+            ${b}
             `
-        }
-
+            };
+        function no(){document.getElementById("body").innerHTML =`<h1 class="narrator">Well since you aren't ready your place isn't here</h1><h2 class="narrator">Have a good day.</h2>`}
     </script>
-    <script defer src="player_bag.js"></script>
-    <script defer src="player_intested_object.js"></script>
-    <script defer src="player_moves.js"></script>
-    <script defer src="player_stats.js"></script>
-    <script defer src="player_target_stats.js"></script>
-    <script defer src="functions.js"></script>
-    <script defer src="combat_dynamic _variables.js"></script>
-    <script defer src="roles.js"></script>
+    <script defer src="player_bag.js"></script><script defer src="player_intested_object.js"></script><script defer src="player_moves.js"></script><script defer src="player_stats.js"></script><script defer src="player_target_stats.js"></script><script defer src="functions.js"></script><script defer src="combat_dynamic _variables.js"></script><script defer src="roles.js"></script>
 </body>
 </html>
