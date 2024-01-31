@@ -17,53 +17,84 @@ let player_bag = {
       boots: null,
     },
     consumables: {
-      weak_healing_potion: {
-        heals: 15,
-        amount: 0,
+      small_healing_potion: {
+        item_name: "Small Healing Potion",
+        effect: {
+          heals: 15,
+        },
+        amount: null,
       },
       medium_healing_potion: {
-        heals: 50,
-        amount: 0,
+        item_name: "Medium Healing Potion",
+        effect: {
+          heals: 50,
+        },
+        amount: null,
       },
       big_healing_potion: {
-        heals: 100,
-        amount: 0,
+        item_name: "Big Healing Potion",
+        effect: {        
+          heals: 100,
+        },
+        amount: null,
       },
       sandCurtain: {
-        stunt: player_target_stats.turns_stunned = 1,
-        amount: 0,
+        item_name: "Sand Curtain",
+        effect: {
+          stunt: player_target_stats.turns_stunned = 1,
+        },
+        amount: null,
       },
       anti_toxin_syringe: {
         item_name: " Anti-Toxin Syringe ",
-        effect: player_stats.negative_effect.poisoned = 0,
-        amount:0,
+        effect: {
+          poisoned: player_stats.negative_effect.poisoned = 0,
+        },
+        amount: null,
       },
       herbal_salve: {
         item_name: "Herbal Save",
         effect: {
-          heals_by_turn: 5,
-          amount_of_turns: 5,
-          use: function useHerbalSalve() {
-            // Check if it's the player's turn and the item is in hand
-            if (player_turn === true && player_bag.consumables.herbal_salve.amount > 0) {
-              player_stats.current_health_points += player_bag.consumables.herbal_salve.effect.heals_by_turn;
-              console.log(`${player_stats.name} healed ${player_bag.consumables.herbal_salve.effect.heals_by_turn}. Now they have ${player_stats.current_health_points} HP.`);
-          
-              // Reduce the item amount
-              player_bag.consumables.herbal_salve.amount--;
-          
-              // Reset turns if the item is used
-              player_bag.consumables.herbal_salve.current_turn = 0;
-            } else {
-              console.log(`It must be your turn, and you should have the ${player_bag.consumables.herbal_salve.item_name} in hand to use it.`);
-            }
-          } // still on test        
-        }
+          heals_by_turn: +5,
+          totalHeal: 25,
+          amount_of_turns: 5,    
+        },
+        amount: null,
       },
-      stimulating_tea: null,
-      toughening_tincture: null,
-      adrenaline_shot: null,
-      smoke_bomb: null,
+      stimulating_tea: {
+        item_name: "Stimulating Tea",
+        effect: {
+          agilityPLus: +2,
+          speedPlus: +2,
+          amount_of_turns: 2,
+        },
+        amount: null,
+      },
+      toughening_tincture: {
+        item_name: "Thoughening Tincture",
+        effect: {
+          defensePlus: +5,
+          amount_of_turns: 3,
+        },
+        amount: null,
+      },
+      adrenaline_shot: {
+        item_name: "Adrenaline Shot",
+        effect: {
+          agilityPLus: +5,
+          speedPlus: +5,
+          amount_of_turns: 3
+        },
+        amount: null,
+      },
+      smoke_bomb: {
+        item_name: "Smoke Bomb",
+        effect: {
+          invisibility: player_stats.agility + 300,
+          amount_of_turns: 3,
+        },
+        amount: null,
+      },
     },
     weapons: {
       weapon: null,
