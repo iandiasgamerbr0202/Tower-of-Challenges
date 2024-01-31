@@ -8,50 +8,54 @@
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
 </head>
 
-<body>
-    <div id="root">
-        <div id="gameScenario">
-            <h1 class="narrator">Here we are!</h1>
-            <p class="narrator">Let's start creating you... <span class="awkward">that's kinda funny when saying out
-                    loud</span></p>
-            <p class="narrator">First we need to know if you are a...</p>
-            <form class="narrator">
-                <input type="radio" value="male" id="player_male_gender" name="player_gender_selection">
-                <label for="player_male_gender">Male</label>
-                <br>
-                <input type="radio" value="female" id="player_female_gender" name="player_gender_selection">
-                <label for="player_female_gender">Female</label>
-                <br>
-                <input type="button" value="Save" id="submit_player_gender" onclick="check_radio_and_save_value_true()">
-            </form>
+    <body>
+        <div id="root">
+            <div id="gameScenario">
+                <h1 class="narrator">Here we are!</h1>
+                <p class="narrator">Let's start creating you... <span class="awkward">that's kinda funny when saying out loud</span></p>
+                <p class="narrator">First we need to know if you are a...</p>
+                <form class="narrator">
+                    <input type="radio" value="male" id="player_male_gender" name="player_gender_selection">
+                    <label for="player_male_gender">Male</label>
+                    <br>
+                    <input type="radio" value="female" id="player_female_gender" name="player_gender_selection">
+                    <label for="player_female_gender">Female</label>
+                    <br>
+                    <input type="button" value="Save" id="submit_player_gender" onclick="check_radio_and_save_value_true()">
+                </form>
+            </div>
+            <div id="chatBox"></div>
         </div>
-        <div id="chatBox"></div>
-    </div>
-    <script>
-        let player_male_gender = {
-            html_id: document.getElementById("player_male_gender"),
-            value: false,
-        };
+        <script>
+            let player_male_gender = {
+                html_id: document.getElementById("player_male_gender"),
+                value: false,
+            };
 
-        let player_female_gender = {
-            html_id: document.getElementById("player_female_gender"),
-            value: false,
-        };
+            let player_female_gender = {
+                html_id: document.getElementById("player_female_gender"),
+                value: false,
+            };
 
-        let check_radio_and_save_value_true = function () {
-            if (player_male_gender.html_id.checked) {
-                player_male_gender.value = true;
-                console.log("The male gender option is selected. The player is a Man.");
-            } else if (player_female_gender.html_id.checked) {
-                player_female_gender.value = true;
-                console.log("The female gender option is selected. The player is a Woman.");
-            } else {
-                alert("Please select a gender.");
-            }
-        };
-    </script>
-
-    <script defer src="script.js"></script>
-</body>
-
+            let check_radio_and_save_value_true = function () {
+                if (player_male_gender.html_id.checked) {
+                    player_male_gender.value = true;
+                    console.log("The male gender option is selected. The player is a Man.");
+                } else if (player_female_gender.html_id.checked) {
+                    player_female_gender.value = true;
+                    console.log("The female gender option is selected. The player is a Woman.");
+                } else {
+                    alert("Please select a gender.");
+                }
+            };
+        </script>
+        <script defer src="player_bag.js"></script>
+        <script defer src="player_intested_object.js"></script>
+        <script defer src="player_moves.js"></script>
+        <script defer src="player_stats.js"></script>
+        <script defer src="player_target_stats.js"></script>
+        <script defer src="functions.js"></script>
+        <script defer src="combat_dynamic _variables.js"></script>
+        <script defer src="roles.js"></script>
+    </body>
 </html>
