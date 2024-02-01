@@ -4,30 +4,23 @@
     <meta charset="utf-8">
     <title>Tower of Challenges</title>
     <link rel="stylesheet" href="style.css" defer>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body id="body">
     <div id="root">
         <div id="gameScenario">
-            <h1 class="narrator">Welcome to the Tower of Challenges!</h1>
-            <p class="narrator">Are you ready for a adventure full of surprises?</p>
-            <input type="button" value="Yes" onclick="yes()">
-            <input type="button" value="No" onclick="no()"
-            <div id="continued_beggining_conversation"></div>
+            <h1 class="narrator">Welcome</h1>
         </div>
         <!-- <div id="chatBox"></div> -->
     </div>
-    <script>
-        function yes(){
-            let a = `<p class="narrator">Well, before we start, we neet first to know YOU </p>`;
-            let b = `<button id="create_your_character" onclick="create_your_character()">Create YOU</button>`;
-            document.getElementById("continued_beggining_conversation").innerHTML = `
-            ${a}
-            ${b}
-            `
-            };
-        function no(){document.getElementById("body").innerHTML =`<h1 class="narrator">Well since you aren't ready your place isn't here</h1><h2 class="narrator">Have a good day.</h2>`}
-    </script>
-    <script defer src="player_bag.js"></script><script defer src="player_intested_object.js"></script><script defer src="player_moves.js"></script><script defer src="player_stats.js"></script><script defer src="player_target_stats.js"></script><script defer src="functions.js"></script><script defer src="combat_dynamic _variables.js"></script><script defer src="roles.js"></script>
+    <script defer src="player_bag.js"></script>
+    <script defer src="player_intested_object.js"></script>
+    <script defer src="player_moves.js"></script>
+    <script defer src="player_stats.js"></script>
+    <script defer src="player_target_stats.js"></script>
+    <script defer src="functions.js"></script>
+    <script defer src="combat_dynamic _variables.js"></script>
+    <script defer src="roles.js"></script>
 </body>
 </html>
