@@ -2,8 +2,11 @@ let player_selected_arrow =
   /*This variable is completely ready to receive new data and update itself, to see updates use console browser*/ null;
 const player_stats = {
   name: null,
-  gender: null,
-  role: null,
+  gender: {
+    male: false,
+    female: false,
+  },
+  role: undefined,
   level: 1,
   current_exp: 0,
   max_exp: 50,
