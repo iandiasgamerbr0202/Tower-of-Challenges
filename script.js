@@ -1,3 +1,5 @@
+let player_selected_arrow =
+  /*This variable is completely ready to receive new data and update itself, to see updates use console browser*/ null;
 let player_stats = {
   name: null,
   gender: null,
@@ -6,21 +8,21 @@ let player_stats = {
   current_exp: 0,
   max_exp: 50,
   /*Level and “exp”, but explained:
-    level is when you get a specific amount of experience… example:
-    level 1,
-    current_exp: 49,
-    max_exp: 50,
-    (console: "player killed a giant rat and gained 5 exp")
-    Level 2,
-    current_exp: 4,
-    max_exp: 100,
-    end of example.
-    So, as we can see when the player is at level 1, his maximum experience was 50, and he had 49, and when
-    he killed a giant rat he gains 5 “exp” since 49 + 5 = 54 the game did the calculation and
-    updated the level to +1 and rewrote current_exp to 4 and at the same time set the new
-    max_exp... but how is max “exp” calculated? Simple, it will add the last amount of maximum exp
-    since 50 was the last maximum, it added up to 50 + 50 = 100, so when the player reaches level 3, it will add up
-    100 + 100 = 200 and so on*/
+      level is when you get a specific amount of experience… example:
+      level 1,
+      current_exp: 49,
+      max_exp: 50,
+      (console: "player killed a giant rat and gained 5 exp")
+      Level 2,
+      current_exp: 4,
+      max_exp: 100,
+      end of example.
+      So, as we can see when the player is at level 1, his maximum experience was 50, and he had 49, and when
+      he killed a giant rat he gains 5 “exp” since 49 + 5 = 54 the game did the calculation and
+      updated the level to +1 and rewrote current_exp to 4 and at the same time set the new
+      max_exp... but how is max “exp” calculated? Simple, it will add the last amount of maximum exp
+      since 50 was the last maximum, it added up to 50 + 50 = 100, so when the player reaches level 3, it will add up
+      100 + 100 = 200 and so on*/
   defense_points: 5,
   current_health_points: 100,
   max_health_points: 100,
@@ -36,10 +38,21 @@ let player_stats = {
     anger_points: 0,
   },
   negative_effect: {
-    poisoned: {},
-    on_fire: {},
-    stunned: {},
-    weak: {},
+    poisoned: {
+      amount_of_turns: null,
+      damage_points_by_turn: null,
+    },
+    on_fire: {
+      amount_of_turns: null,
+      damage_points_by_turn: null,
+    },
+    stunned: {
+      amount_of_turns: null,
+    },
+    weak: {
+      amount_of_turns: null,
+      damage_points_reduced: null,
+    },
   },
 };
 let player_target_stats = /*Ready to Update*/ {
@@ -60,35 +73,6 @@ let player_target_stats = /*Ready to Update*/ {
   anger_points: 0,
   pride_points: 0,
   turns_stunned: 0,
-};
-let player_turn = null; //receives boolean.
-let player_selected_attack = null;
-/*
-  receive an object
-*/
-let player_has_attacked = {
-  attack_was_successful: null,
-  /* 
-    receive boolean 
-  */
-  how_much_damage: null,
-  /*
-      receive number on a null variable; this is a null example -> object.variable (variable = number) 
-  */
-};
-let this_turn_player_was_attacked = {
-  which_attack: null,
-  /*
-      receive string on a object -> object.object.object.variable (variable = string)
-    */
-  damage_received: null,
-  /* 
-    receive a number
-  */
-  did_he_dodged: null,
-  /* 
-    receive boolean; 
-  */
 };
 let player_bag = {
   armor: {
@@ -234,8 +218,6 @@ let player_bag = {
     },
   },
 }; //This variable is completely ready to receive new data and update itself;
-let player_selected_arrow =
-  /*This variable is completely ready to receive new data and update itself, to see updates use console browser*/ null;
 const roles = {
   archer: {
     title: "Imperial Archer",
@@ -299,9 +281,7 @@ const roles = {
         },
       },
       consumables: {
-        small_weak_healing_potion: {
-          heals: 15,
-        },
+        small_weak_healing_potion: {},
       },
     },
   }, // stats complete, moves complete, start_bag half-way
@@ -421,7 +401,7 @@ const roles = {
     start_bag: {},
   }, // isn't complete
   combat_master: {
-    title: "Monk",
+    title: "Combat Master",
     stats: {
       defense_points: +0,
       health_points: +0,
@@ -464,8 +444,37 @@ const roles = {
     },
     moves: {},
     start_bag: {},
-  },
+  }, // isn't complete
 }; //This variable isn't complete and isn't ready;
+let player_turn = null; //receives boolean.
+let player_selected_attack = null;
+/*
+  receive an object
+*/
+let player_has_attacked = {
+  attack_was_successful: null,
+  /* 
+    receive boolean 
+  */
+  how_much_damage: null,
+  /*
+      receive number on a null variable; this is a null example -> object.variable (variable = number) 
+  */
+};
+let this_turn_player_was_attacked = {
+  which_attack: null,
+  /*
+      receive string on a object -> object.object.object.variable (variable = string)
+    */
+  damage_received: null,
+  /* 
+    receive a number
+  */
+  did_he_dodged: null,
+  /* 
+    receive boolean; 
+  */
+};
 const oneAgainstTenProbability = function oneAgainstTenProbability() {
   if (Math.floor(Math.random() * 10) === 0) {
     positivePoint(); // call positive function;
