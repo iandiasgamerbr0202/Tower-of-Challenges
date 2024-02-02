@@ -1,6 +1,6 @@
 let player_selected_arrow =
   /*This variable is completely ready to receive new data and update itself, to see updates use console browser*/ null;
-let player_stats = {
+const player_stats = {
   name: null,
   gender: null,
   role: null,
@@ -55,7 +55,7 @@ let player_stats = {
     },
   },
 };
-let player_target_stats = /*Ready to Update*/ {
+const player_target_stats = /*Ready to Update*/ {
   name: null,
   role: null,
   level: 0,
@@ -74,7 +74,7 @@ let player_target_stats = /*Ready to Update*/ {
   pride_points: 0,
   turns_stunned: 0,
 };
-let player_bag = {
+const player_bag = {
   armor: {
     helmet: null,
     necklace: null,
@@ -451,7 +451,7 @@ let player_selected_attack = null;
 /*
   receive an object
 */
-let player_has_attacked = {
+const player_has_attacked = {
   attack_was_successful: null,
   /* 
     receive boolean 
@@ -461,7 +461,7 @@ let player_has_attacked = {
       receive number on a null variable; this is a null example -> object.variable (variable = number) 
   */
 };
-let this_turn_player_was_attacked = {
+const this_turn_player_was_attacked = {
   which_attack: null,
   /*
       receive string on a object -> object.object.object.variable (variable = string)
@@ -482,13 +482,13 @@ const oneAgainstTenProbability = function oneAgainstTenProbability() {
     negativePoint(); // call negative function;
   }
 };
-function positivePoint() {
+const positivePoint = function positivePoint() {
   player_target_stats.pride_points += 1;
   return console.log(
     `${player_target_stats.name} din't payed attention on what you said.`
   );
 } //Player treat the target but the target will get more angry or confident;
-function negativePoint() {
+const negativePoint = function negativePoint() {
   player_target_stats.pride_points -= 1;
   return console.log(
     `${player_target_stats.name} was slightly shaken about what you said.`
@@ -498,7 +498,7 @@ function negativePoint() {
 Player treat the target and the target get a little scared about what you said;
 */
 let player_object_interested = /*Object's only; Ready to Update*/ {};
-let player_moves = {
+const player_moves = {
   common_move: {
     a: {
       move_name: null,
