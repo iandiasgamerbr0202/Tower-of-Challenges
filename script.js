@@ -371,7 +371,7 @@ const roles = {
       agility_points: +1,
       strength_points: +0,
       damage_points: +1,
-      intelectual_points: +2,
+      intellectual_points: +2,
       stamina_points: +0,
     },
     moves: {
