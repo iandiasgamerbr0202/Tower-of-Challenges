@@ -71,7 +71,7 @@ let player_bag = {
         amount: null,
       },
       toughening_tincture: {
-        item_name: "Thoughening Tincture",
+        item_name: "Toughening Tincture",
         effect: {
           defensePlus: +5,
           amount_of_turns: 3,
