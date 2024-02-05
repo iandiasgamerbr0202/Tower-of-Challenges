@@ -134,7 +134,7 @@ const player_bag = {
     chestArmor: null,
     gloves: null,
     ring1: null,
-    ring2: null, //all of these will receive objects;
+    ring2: null,
     ring3: null,
     ring4: null,
     bracelet1: null,
