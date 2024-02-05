@@ -1,5 +1,5 @@
 let player_selected_arrow =
-  /*This variable is completely ready to receive new data and update itself, to see updates use console browser*/ null;
+  /*This variable will point to another variable inside player_bag.weapons.arrow*/ null;
 const player_stats = {
   name: null,
   gender: {
@@ -176,9 +176,21 @@ const player_bag = {
     },
   },
   weapons: {
-    weapon: null,
-    shield: null,
-    bow: null,
+    weapon: {
+      stats: {},
+      effect: {},
+      descriptions: null,
+    },
+    shield: {
+      stats: {},
+      effect: {},
+      descriptions: null,
+    },
+    bow: {
+      stats: {},
+      effect: {},
+      descriptions: null,
+    },
     arrows: {
       common: {
         cost: 1,
