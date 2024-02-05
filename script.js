@@ -1,17 +1,17 @@
-const oneAgainstTenProbability = function oneAgainstTenProbability() {
+const treat_target = function treat_target() {
   if (Math.floor(Math.random() * 10) === 0) {
-    positivePoint(); // call positive function;
+    yourTreatDintWorked(); // call positive function;
   } else {
-    negativePoint(); // call negative function;
+    yourTreatWorked(); // call negative function;
   }
 };
-const positivePoint = function positivePoint() {
+const yourTreatDintWorked = function positivePoint() {
   player_target_stats.pride_points += 1;
   return console.log(
     `${player_target_stats.name} din't payed attention on what you said.`
   );
 } //Player treat the target but the target will get more angry or confident;
-const negativePoint = function negativePoint() {
+const yourTreatWorked = function negativePoint() {
   player_target_stats.pride_points -= 1;
   return console.log(
     `${player_target_stats.name} was slightly shaken about what you said.`
@@ -581,46 +581,31 @@ const player_moves = {
   }, // Ready to Update;
   interact: {
     check: {
-      check_status: player_target_stats /* Beta; May throw an Error; */,
-    }, // Beta; May throw an Error;
-    treat: {
-      on_battle: oneAgainstTenProbability,
-      on_map: oneAgainstTenProbability,
-    }, // Ready to be called;
+      check_target: player_target_stats,
+      check_object: null,
+    },
+    treat: treat_target,
     talk: {}, // Unfinished;
     give: {}, // Unfinished;
     lie: {}, // Unfinished;
     surrender_order: {}, // Unfinished;
-  }, // Unfinished;
+  },
   spare: {
-    forgive: {}, // Unfinished; Throw Error;
-    spare_target: {}, // Unfinished; Throw Error;
-    flee: {}, // Unfinished; Throw Error;
+    forgive: {}, // Unfinished;
+    spare_target: {}, // Unfinished;
+    flee: {}, // Unfinished;
   },
 };
 let player_turn = null;
 let player_selected_attack = null;
 const player_has_attacked = {
-  attack_was_successful: null,
-  /* 
-    receive boolean 
-  */
-  how_much_damage: null,
+  /*Did our*/attack_was_successful: null,
+  /*If yes*/how_much_damage: null,
 };
 const this_turn_player_was_attacked = {
+  /*did player was attacked?*/
+  /*if yes...*/
   which_attack: null,
-  /*
-      receive string on a object -> object.object.object.variable (variable = string)
-    */
-  damage_received: null,
-  /* 
-    receive a number
-  */
-  did_he_dodged: null,
-  /* 
-    receive boolean; 
-  */
+  /*How much*/damage_received: null,
+  /*He din't received damage? So*/did_he_dodged: null,
 };
-/*
-Player treat the target and the target get a little scared about what you said;
-*/
