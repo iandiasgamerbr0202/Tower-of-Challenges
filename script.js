@@ -81,7 +81,7 @@ const player_stats = {
     },
   },
 };
-const player_target_stats = /*Ready to Update*/ {
+const player_target_stats = {
   name: null,
   gender: {
     male: false,
