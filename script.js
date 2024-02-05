@@ -1,8 +1,8 @@
 const treat_target = function treat_target() {
   if (Math.floor(Math.random() * 10) === 0) {
-    yourTreatDintWorked(); // call positive function;
+    yourTreatDintWorked();
   } else {
-    yourTreatWorked(); // call negative function;
+    yourTreatWorked(); 
   }
 };
 const yourTreatDintWorked = function positivePoint() {
@@ -16,7 +16,7 @@ const yourTreatWorked = function negativePoint() {
   return console.log(
     `${player_target_stats.name} was slightly shaken about what you said.`
   );
-}
+} //Player treat the target and the target get uncomfortable/sad/anxious/scared
 let player_selected_arrow = /*This variable will point to another variable inside player_bag.weapons.arrow*/ null;
 const player_stats = {
   name: null,
