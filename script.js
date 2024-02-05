@@ -17,7 +17,12 @@ const yourTreatWorked = function negativePoint() {
     `${player_target_stats.name} was slightly shaken about what you said.`
   );
 } //Player treat the target and the target get uncomfortable/sad/anxious/scared
-let player_selected_arrow = /*This variable will point to another variable inside player_bag.weapons.arrow*/ null;
+const player_selected_arrow =  {
+  arrow_name: null,
+  arrow_cost: null,
+  arrow_effect: null,
+  arrow_description: null,
+};
 const player_stats = {
   name: null,
   gender: {
@@ -92,13 +97,16 @@ const player_target_stats = /*Ready to Update*/ {
   speed_points: 5,
   agility_points: 5,
   strength_points: 5,
-  range_damage_points: 0,
+  range_damage_points: 1,
   hand_damage_points: 1,
   intellectual_points: 5,
+  max_stamina_points: 10,
+  max_concentration_points: 10,
+  max_anger_points: 10,
   consumable_points: {
-    stamina_points: 7,
-    concentration_points: 10,
-    anger_points: 0,
+    current_stamina_points: 5,
+    current_concentration_points: 5,
+    current_anger_points: 0,
   },
   negative_effect: {
     poisoned: {
@@ -176,7 +184,7 @@ const player_bag = {
       item_name: "Herbal Save",
       effect: {
         heals_by_turn: +5,
-        totalHeal: 25,
+        total_heal: 25,
         amount_of_turns: 5,
       },
       amount: null,
@@ -184,8 +192,8 @@ const player_bag = {
     stimulating_tea: {
       item_name: "Stimulating Tea",
       effect: {
-        agilityPLus: +2,
-        speedPlus: +2,
+        plus_agility: +2,
+        plus_speed: +2,
         amount_of_turns: 2,
       },
       amount: null,
@@ -193,7 +201,7 @@ const player_bag = {
     toughening_tincture: {
       item_name: "Toughening Tincture",
       effect: {
-        defensePlus: +5,
+        plus_defense: +5,
         amount_of_turns: 3,
       },
       amount: null,
@@ -201,8 +209,8 @@ const player_bag = {
     adrenaline_shot: {
       item_name: "Adrenaline Shot",
       effect: {
-        agilityPLus: +5,
-        speedPlus: +5,
+        plus_agility: +5,
+        plus_speed: +5,
         amount_of_turns: 3,
       },
       amount: null,
@@ -278,14 +286,14 @@ const roles = {
   archer: {
     title: "Imperial Archer",
     stats: {
-      defense_points: +0,
-      health_points: +0,
-      speed_points: +2,
-      agility_points: +1,
-      strength_points: +0,
-      damage_points: +1,
-      intellectual_points: +2,
-      stamina_points: +0,
+      plus_defense_points: +0,
+      plus_health_points: +0,
+      plus_speed_points: +2,
+      plus_agility_points: +1,
+      plus_strength_points: +0,
+      plus_damage_points: +1,
+      plus_intellectual_points: +2,
+      plus_stamina_points: +0,
     },
     moves: {
       lock_aim: {
@@ -596,8 +604,16 @@ const player_moves = {
     flee: {}, // Unfinished;
   },
 };
-let player_turn = null;
-let player_selected_attack = null;
+const player_turn = {
+  stunned: false,
+  proceed: null // true or false
+};
+const player_selected_attack = {
+  attack_name: null,
+  attack_damage_points: null,
+  attack_effect: null,
+  attack_descriptions: null,
+};
 const player_has_attacked = {
   /*Did our*/attack_was_successful: null,
   /*If yes*/how_much_damage: null,
