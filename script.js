@@ -1,5 +1,23 @@
-let player_selected_arrow =
-  /*This variable will point to another variable inside player_bag.weapons.arrow*/ null;
+const oneAgainstTenProbability = function oneAgainstTenProbability() {
+  if (Math.floor(Math.random() * 10) === 0) {
+    positivePoint(); // call positive function;
+  } else {
+    negativePoint(); // call negative function;
+  }
+};
+const positivePoint = function positivePoint() {
+  player_target_stats.pride_points += 1;
+  return console.log(
+    `${player_target_stats.name} din't payed attention on what you said.`
+  );
+} //Player treat the target but the target will get more angry or confident;
+const negativePoint = function negativePoint() {
+  player_target_stats.pride_points -= 1;
+  return console.log(
+    `${player_target_stats.name} was slightly shaken about what you said.`
+  );
+}
+let player_selected_arrow = /*This variable will point to another variable inside player_bag.weapons.arrow*/ null;
 const player_stats = {
   name: null,
   gender: {
@@ -60,22 +78,45 @@ const player_stats = {
 };
 const player_target_stats = /*Ready to Update*/ {
   name: null,
-  role: null,
-  level: 0,
-  exp: 0,
-  defense_points: 0,
-  health_points: 0,
-  speed_points: 0,
-  agility_points: 0,
-  strength_points: 0,
+  gender: {
+    male: false,
+    female: false,
+  },
+  role: undefined,
+  level: 1,
+  current_exp: 0,
+  max_exp: 50,
+  defense_points: 5,
+  current_health_points: 100,
+  max_health_points: 100,
+  speed_points: 5,
+  agility_points: 5,
+  strength_points: 5,
   range_damage_points: 0,
-  hand_damage_points: 0,
-  intellectual_points: 0,
-  stamina_points: 0,
-  concentration_points: 0,
-  anger_points: 0,
-  pride_points: 0,
-  turns_stunned: 0,
+  hand_damage_points: 1,
+  intellectual_points: 5,
+  consumable_points: {
+    stamina_points: 7,
+    concentration_points: 10,
+    anger_points: 0,
+  },
+  negative_effect: {
+    poisoned: {
+      amount_of_turns: null,
+      damage_points_by_turn: null,
+    },
+    on_fire: {
+      amount_of_turns: null,
+      damage_points_by_turn: null,
+    },
+    stunned: {
+      amount_of_turns: null,
+    },
+    weak: {
+      amount_of_turns: null,
+      damage_points_reduced: null,
+    },
+  },
 };
 const player_bag = {
   armor: {
@@ -85,7 +126,7 @@ const player_bag = {
     chestArmor: null,
     gloves: null,
     ring1: null,
-    ring2: null, //all of these will receive an object;
+    ring2: null, //all of these will receive objects;
     ring3: null,
     ring4: null,
     bracelet1: null,
@@ -232,7 +273,7 @@ const player_bag = {
       },
     },
   },
-}; //This variable is completely ready to receive new data and update itself;
+};
 const roles = {
   archer: {
     title: "Imperial Archer",
@@ -460,59 +501,7 @@ const roles = {
     moves: {},
     start_bag: {},
   }, // isn't complete
-}; //This variable isn't complete and isn't ready;
-let player_turn = null; //receives boolean.
-let player_selected_attack = null;
-/*
-  receive an object
-*/
-const player_has_attacked = {
-  attack_was_successful: null,
-  /* 
-    receive boolean 
-  */
-  how_much_damage: null,
-  /*
-      receive number on a null variable; this is a null example -> object.variable (variable = number) 
-  */
 };
-const this_turn_player_was_attacked = {
-  which_attack: null,
-  /*
-      receive string on a object -> object.object.object.variable (variable = string)
-    */
-  damage_received: null,
-  /* 
-    receive a number
-  */
-  did_he_dodged: null,
-  /* 
-    receive boolean; 
-  */
-};
-const oneAgainstTenProbability = function oneAgainstTenProbability() {
-  if (Math.floor(Math.random() * 10) === 0) {
-    positivePoint(); // call positive function;
-  } else {
-    negativePoint(); // call negative function;
-  }
-};
-const positivePoint = function positivePoint() {
-  player_target_stats.pride_points += 1;
-  return console.log(
-    `${player_target_stats.name} din't payed attention on what you said.`
-  );
-} //Player treat the target but the target will get more angry or confident;
-const negativePoint = function negativePoint() {
-  player_target_stats.pride_points -= 1;
-  return console.log(
-    `${player_target_stats.name} was slightly shaken about what you said.`
-  );
-}
-/*
-Player treat the target and the target get a little scared about what you said;
-*/
-let player_object_interested = /*Object's only; Ready to Update*/ {};
 const player_moves = {
   common_move: {
     a: {
@@ -593,8 +582,6 @@ const player_moves = {
   interact: {
     check: {
       check_status: player_target_stats /* Beta; May throw an Error; */,
-      check_object:
-        player_object_interested.descriptions /* Beta; May throw an Error; */,
     }, // Beta; May throw an Error;
     treat: {
       on_battle: oneAgainstTenProbability,
@@ -610,4 +597,30 @@ const player_moves = {
     spare_target: {}, // Unfinished; Throw Error;
     flee: {}, // Unfinished; Throw Error;
   },
-}; //This variable isn't complete and isn't ready;
+};
+let player_turn = null;
+let player_selected_attack = null;
+const player_has_attacked = {
+  attack_was_successful: null,
+  /* 
+    receive boolean 
+  */
+  how_much_damage: null,
+};
+const this_turn_player_was_attacked = {
+  which_attack: null,
+  /*
+      receive string on a object -> object.object.object.variable (variable = string)
+    */
+  damage_received: null,
+  /* 
+    receive a number
+  */
+  did_he_dodged: null,
+  /* 
+    receive boolean; 
+  */
+};
+/*
+Player treat the target and the target get a little scared about what you said;
+*/
