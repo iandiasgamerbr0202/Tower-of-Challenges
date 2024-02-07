@@ -971,31 +971,31 @@ const player_bag = {
     },
     arrows: {
       common: {
-        cost: 1,
+        cost: 5,
         damage_points: player_stats.range_damage_points,
       },
       quick: {
-        cost: 0.5,
+        cost: 2.5,
         damage_points: player_stats.range_damage_points,
       },
       heavy: {
-        cost: 2,
+        cost: 10,
         damage_points: player_stats.range_damage_points,
       },
       poisoned: {
-        cost: 2,
+        cost: 13,
         damage_points: player_stats.range_damage_points,
         poisoned_by: 3,
         damage_point_by_turn: player_stats.range_damage_points / 2,
       },
       fire: {
-        cost: 2.5,
+        cost: 13.5,
         damage_points: player_stats.range_damage_points,
         fire_by: 3,
         damage_point_by_turn: player_stats.range_damage_points / 2,
       },
       explosive: {
-        cost: 3,
+        cost: 15,
         damage_points: player_stats.range_damage_points,
         weakness: {
           defense_points: -5,
@@ -1004,7 +1004,7 @@ const player_bag = {
         weak_by: 3,
       },
       stunt: {
-        amount: 3.5,
+        amount: 20,
         damage_points: player_stats.range_damage_points,
         turns_stunned: 3,
       },
