@@ -59,12 +59,12 @@ const player_stats = {
   hand_damage_points: 1,
   intellectual_points: 5,
   consumable_points: {
-    max_stamina_points: 10,
-    max_concentration_points: 10,
-    max_anger_points: 10,
-    stamina_points: 7,
-    concentration_points: 10,
-    anger_points: 0,
+    max_stamina_points: 5,
+    max_concentration_points: 5,
+    max_anger_points: 5,
+    current_stamina_points: 5,
+    current_concentration_points: 5,
+    current_anger_points: 0,
   },
   negative_effect: {
     poisoned: {
