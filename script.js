@@ -2,7 +2,7 @@ const treat_target = function treat_target() {
   if (Math.floor(Math.random() * 10) === 0) {
     yourTreatDintWorked();
   } else {
-    yourTreatWorked(); 
+    yourTreatWorked();
   }
 };
 const yourTreatDintWorked = function positivePoint() {
@@ -10,14 +10,14 @@ const yourTreatDintWorked = function positivePoint() {
   return console.log(
     `${player_target_stats.name} din't payed attention on what you said.`
   );
-} //Player treat the target but the target will get more angry or confident;
+}; //Player treat the target but the target will get more angry or confident;
 const yourTreatWorked = function negativePoint() {
   player_target_stats.pride_points -= 1;
   return console.log(
     `${player_target_stats.name} was slightly shaken about what you said.`
   );
-} //Player treat the target and the target get uncomfortable/sad/anxious/scared
-const player_selected_arrow =  {
+}; //Player treat the target and the target get uncomfortable/sad/anxious/scared
+const player_selected_arrow = {
   arrow_name: null,
   arrow_cost: null,
   arrow_effect: null,
@@ -136,30 +136,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -178,30 +186,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -220,30 +236,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -262,30 +286,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -304,30 +336,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -346,30 +386,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -388,30 +436,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -430,30 +486,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -472,30 +536,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -514,30 +586,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -556,30 +636,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -598,30 +686,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -640,30 +736,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -682,30 +786,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -724,30 +836,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -764,82 +884,143 @@ const player_bag = {
   },
   consumables: {
     small_healing_potion: {
+      item_id: null,
       item_name: "Small Healing Potion",
-      effect: {
-        heals: 15,
+      item_stats: {
+        item_effect: {
+          heals: 15,
+          amount: null,
+        },
       },
-      amount: null,
     },
     medium_healing_potion: {
+      item_id: null,
       item_name: "Medium Healing Potion",
-      effect: {
-        heals: 50,
+      item_stats: {
+        item_effect: {
+          heals: 50,
+          amount: null,
+        },
       },
-      amount: null,
     },
     big_healing_potion: {
+      item_id: null,
       item_name: "Big Healing Potion",
-      effect: {
-        heals: 100,
+      item_stats: {
+        item_effect: {
+          heals: 100,
+          amount: null,
+        },
       },
-      amount: null,
     },
     sandCurtain: {
+      item_id: null,
       item_name: "Sand Curtain",
-      effect: {
-        stunt: (player_target_stats.turns_stunned = 1),
+      item_stats: {
+        item_effect: {
+          stunt: (player_target_stats.turns_stunned = 1),
+          amount: null,
+        },
       },
-      amount: null,
     },
     anti_toxin_syringe: {
+      item_id: null,
       item_name: " Anti-Toxin Syringe ",
-      effect: {
-        poisoned: (player_stats.negative_effect.poisoned = 0),
+      item_stats: {
+        item_effect: {
+          poisoned: (player_stats.negative_effect.poisoned = 0),
+          amount: null,
+        },
       },
-      amount: null,
     },
     herbal_salve: {
+      item_id: null,
       item_name: "Herbal Save",
-      effect: {
-        heals_by_turn: +5,
-        total_heal: 25,
-        amount_of_turns: 5,
+      item_stats: {
+        item_effect: {
+          heals_by_turn: player_stats.current_health_points + 5,
+          total_heal: 25,
+          amount_of_turns: 5,
+          turns_left: 0,
+          amount: null,
+        },
       },
-      amount: null,
     },
     stimulating_tea: {
+      item_id: null,
       item_name: "Stimulating Tea",
-      effect: {
-        plus_agility: +2,
-        plus_speed: +2,
-        amount_of_turns: 2,
+      item_stats: {
+        item_effect: {
+          plus_agility_points: player_stats.agility_points + 2,
+          plus_speed_points: player_stats.speed_points + 2,
+          amount_of_turns: 2,
+          amount: null,
+        },
       },
-      amount: null,
     },
     toughening_tincture: {
+      item_id: null,
       item_name: "Toughening Tincture",
-      effect: {
-        plus_defense: +5,
-        amount_of_turns: 3,
+      item_stats: {
+        item_effect: {
+          plus_defense_points: player_stats.defense_points + 5,
+          amount_of_turns: 3,
+          amount: null,
+        },
       },
-      amount: null,
     },
     adrenaline_shot: {
+      item_id: null,
       item_name: "Adrenaline Shot",
-      effect: {
-        plus_agility: +5,
-        plus_speed: +5,
-        amount_of_turns: 3,
+      item_stats: {
+        item_effect: {
+          plus_agility_points: player_stats.agility_points + 5,
+          plus_speed_points: +5,
+          amount_of_turns: 3,
+          amount: null,
+        },
       },
-      amount: null,
     },
     smoke_bomb: {
+      item_id: null,
       item_name: "Smoke Bomb",
-      effect: {
-        invisibility: player_stats.agility + 300,
-        amount_of_turns: 3,
+      item_stats: {
+        item_effect: {
+          invisibility: player_stats.agility + 300,
+          amount_of_turns: 3,
+          descriptions: null,
+          amount: null,
+        },
       },
-      amount: null,
+    },
+    new_item_to_be_added: {
+      item_id: null,
+      item_name: null,
+      item_stats: {
+        item_effect: {
+          plus: {
+            plus_defense_points: /*player_stats.defense_points +*/ null,
+            plus_max_health_points: /*player_stats.max_health_points +*/ null,
+            plus_speed_points: /*player_stats.speed_points +*/ null,
+            plus_agility_points: /*player_stats.agility_points +*/ null,
+            plus_strength_points: /*player_stats.strength_points +*/ null,
+            plus_range_damage_points:
+              /*player_stats.range_damage_points +*/ null,
+            plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+            plus_intellectual_points:
+              /*player_stats.intellectual_points +*/ null,
+            plus_max_stamina_points:
+              /*player_stats.consumable_points.max_stamina_points +*/ null,
+            plus_max_concentration_points:
+              /*player_stats.consumable_points.max_concentration_points +*/ null,
+            plus_max_anger_points:
+              /*player_stats.consumable_points.max_anger_points +*/ null,
+          },
+          descriptions: null,
+          amount_of_turns: null,
+          amount: null,
+        },
+      },
     },
   },
   weapons: {
@@ -848,30 +1029,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -890,30 +1079,38 @@ const player_bag = {
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -927,35 +1124,43 @@ const player_bag = {
         },
       },
     },
-    bow:{
+    bow: {
       item_id: null,
       item_name: null,
       item_stats: {
         plus: {
-          plus_defense_points: /*player_stats.defense_points +*/null,
-          plus_max_health_points: /*player_stats.max_health_points +*/null,
-          plus_speed_points: /*player_stats.speed_points +*/null,
-          plus_agility_points: /*player_stats.agility_points +*/null,
-          plus_strength_points: /*player_stats.strength_points +*/null,
-          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
-          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
-          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
-          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
-          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
-          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
         },
         reduce: {
-          reduce_defense_points: /*player_stats.defense_points -*/null,
-          reduce_max_health_points: /*player_stats.max_health_points -*/null,
-          reduce_speed_points: /*player_stats.speed_points -*/null,
-          reduce_agility_points: /*player_stats.agility_points -*/null,
-          reduce_strength_points: /*player_stats.strength_points -*/null,
-          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
-          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
-          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
-          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
-          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
-          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
         },
       },
       effect: {
@@ -1335,7 +1540,7 @@ const player_moves = {
 };
 const player_turn = {
   stunned: false,
-  proceed: null // true or false
+  proceed: null, // true or false
 };
 const player_selected_attack = {
   attack_name: null,
@@ -1344,13 +1549,13 @@ const player_selected_attack = {
   attack_descriptions: null,
 };
 const player_has_attacked = {
-  /*Did our*/attack_was_successful: null,
-  /*If yes*/how_much_damage: null,
+  /*Did our*/ attack_was_successful: null,
+  /*If yes*/ how_much_damage: null,
 };
 const this_turn_player_was_attacked = {
   /*did player was attacked?*/
   /*if yes...*/
   which_attack: null,
-  /*How much*/damage_received: null,
-  /*He din't received damage? So*/did_he_dodged: null,
+  /*How much*/ damage_received: null,
+  /*He din't received damage? So*/ did_he_dodged: null,
 };
