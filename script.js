@@ -59,6 +59,9 @@ const player_stats = {
   hand_damage_points: 1,
   intellectual_points: 5,
   consumable_points: {
+    max_stamina_points: 10,
+    max_concentration_points: 10,
+    max_anger_points: 10,
     stamina_points: 7,
     concentration_points: 10,
     anger_points: 0,
@@ -100,10 +103,10 @@ const player_target_stats = {
   range_damage_points: 1,
   hand_damage_points: 1,
   intellectual_points: 5,
-  max_stamina_points: 10,
-  max_concentration_points: 10,
-  max_anger_points: 10,
   consumable_points: {
+    max_stamina_points: 10,
+    max_concentration_points: 10,
+    max_anger_points: 10,
     current_stamina_points: 5,
     current_concentration_points: 5,
     current_anger_points: 0,
@@ -128,7 +131,48 @@ const player_target_stats = {
 };
 const player_bag = {
   armor: {
-    helmet: null,
+    helmet: {
+      item_id: null,
+      item_name: null,
+      item_stats: {
+        plus: {
+          plus_defense_points: /*player_stats.defense_points +*/null,
+          plus_max_health_points: /*player_stats.max_health_points +*/null,
+          plus_speed_points: /*player_stats.speed_points +*/null,
+          plus_agility_points: /*player_stats.agility_points +*/null,
+          plus_strength_points: /*player_stats.strength_points +*/null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/null,
+          plus_max_stamina_points: /*player_stats.consumable_points.max_stamina_points +*/null,
+          plus_max_concentration_points: /*player_stats.consumable_points.max_concentration_points +*/null,
+          plus_max_anger_points: /*player_stats.consumable_points.max_anger_points +*/null,
+        },
+        reduce: {
+          reduce_defense_points: /*player_stats.defense_points -*/null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/null,
+          reduce_speed_points: /*player_stats.speed_points -*/null,
+          reduce_agility_points: /*player_stats.agility_points -*/null,
+          reduce_strength_points: /*player_stats.strength_points -*/null,
+          reduce_range_damage_points: /*player_stats.range_damage_points -*/null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/null,
+          reduce_intellectual_points: /*player_stats.intellectual_points -*/null,
+          reduce_max_stamina_points: /*player_stats.consumable_points.max_stamina_points -*/null,
+          reduce_max_concentration_points: /*player_stats.consumable_points.max_concentration_points -*/null,
+          reduce_max_anger_points: /*player_stats.consumable_points.max_anger_points -*/null,
+        },
+      },
+      effect: {
+        good: {
+          plus: {},
+          descriptions: {},
+        },
+        bad: {
+          plus: {},
+          descriptions: {},
+        },
+      },
+    },
     necklace: null,
     cloak: null,
     chestArmor: null,
