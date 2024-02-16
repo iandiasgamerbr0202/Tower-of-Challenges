@@ -1233,18 +1233,33 @@ const roles = {
       lock_aim: {
         move_name: "Lock Aim",
         damage_points: 0,
+        cost: player_stats.consumable_points.current_stamina_points - 2,
         descriptions:
           "You focus with all Your force on the target, making almost impossible to the target to dodge.",
       },
       dry_shot: {
         move_name: "Dry Shot",
-        damage_points: player_selected_arrow,
+        cost: player_stats.consumable_points - player_selected_arrow.arrow_cost,
+        damage_points: player_stats.range_damage_points,
         descriptions: "A simple shot without mercy.",
       },
       switch_arrow: {
         move_name: "Switch Arrow",
         damage_points: 0,
+        cost: 0,
         descriptions: "You change te arrow to raise your chances of winning.",
+      },
+      surprise_punch: {
+        move_name: "Surprise Punch",
+        damage_points: player_stats.hand_damage_points,
+        cost: player_stats.consumable_points.current_anger_points - 2,
+        descriptions: "You surprise your target by giving a punch very fast in the face... they don't know how to react... They'r attack was cancelled this turn",
+      },
+      heavy_shot:{
+        move_name: "Heavy Shot",
+        damage_points: player_stats.range_damage_points * 2,
+        cost: player_stats.consumable_points.current_concentration_points - player_stats.consumable_points.max_concentration_points,
+        descriptions: "You use all your strength and concentration to push your bow till its limits to double the damage of your attack, but it reduce your chance of damage by half",
       },
     },
     start_bag: {
