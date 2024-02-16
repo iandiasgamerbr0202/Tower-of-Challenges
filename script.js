@@ -1241,7 +1241,7 @@ const roles = {
         move_name: "Dry Shot",
         cost: player_stats.consumable_points - player_selected_arrow.arrow_cost,
         damage_points: player_stats.range_damage_points,
-        descriptions: "A simple shot without mercy.",
+        descriptions: "A simple shot, without mercy.",
       },
       switch_arrow: {
         move_name: "Switch Arrow",
@@ -1297,7 +1297,7 @@ const roles = {
         small_weak_healing_potion: {},
       },
     },
-  }, // stats complete, moves complete, start_bag half-way
+  },
   hunter: {
     title: "Wild Hunter",
     stats: {
@@ -1311,8 +1311,8 @@ const roles = {
       stamina_points: +1,
     },
     moves: {
-      cold_shot: {
-        move_name: "Cold shot",
+      quick_shot: {
+        move_name: "Quick shot",
         damage_points: player_stats.range_damage_points,
         descriptions:
           "Without thinking or aiming, You shot on the first thing You see moving in Your direction.",
