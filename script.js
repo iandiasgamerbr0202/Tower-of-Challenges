@@ -83,6 +83,12 @@ const player_stats = {
       damage_points_reduced: null,
     },
   },
+  money_bag: {
+    copper_coins: null,
+    silver_coins: null, //1 silver = 1000 copper,
+    gold_coins: null, // 1 gold = 1000 silver and 1.000.000 copper
+    royal_coin: null, // 1 royal = 1000 gold and 1.000.000 silver and 1.000.000.000 copper
+  },
 };
 const player_target_stats = {
   name: null,
