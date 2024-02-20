@@ -1304,6 +1304,16 @@ const roles = {
             },
           },
         },
+        sandCurtain: {
+          item_id: player_bag.consumables.sandCurtain.item_id,
+          item_name: player_bag.consumables.sandCurtain.item_name,
+          item_stats: {
+            item_effect:{
+              stunt: player_bag.consumables.sandCurtain.item_stats.item_effect.stunt,
+              amount: 3,
+            },
+          },
+        },
       },
     },
   },
