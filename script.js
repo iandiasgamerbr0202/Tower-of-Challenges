@@ -888,7 +888,7 @@ const player_bag = {
       item_name: "Small Healing Potion",
       item_stats: {
         item_effect: {
-          heals: 15,
+          heals: player_stats.current_health_points + 15,
           amount: null,
         },
       },
@@ -898,7 +898,7 @@ const player_bag = {
       item_name: "Medium Healing Potion",
       item_stats: {
         item_effect: {
-          heals: 50,
+          heals: player_stats.current_health_points + 50,
           amount: null,
         },
       },
@@ -908,7 +908,7 @@ const player_bag = {
       item_name: "Big Healing Potion",
       item_stats: {
         item_effect: {
-          heals: 100,
+          heals: player_stats.current_health_points + 100,
           amount: null,
         },
       },
@@ -1294,7 +1294,16 @@ const roles = {
         },
       },
       consumables: {
-        small_weak_healing_potion: {},
+        medium_healing_potion: {
+          item_id: player_bag.consumables.medium_healing_potion.item_id,
+          item_name: player_bag.consumables.medium_healing_potion.item_name,
+          item_stats: {
+            item_effect: {
+              heals: player_bag.consumables.medium_healing_potion.item_stats.item_effect.heals,
+              amount: 3,
+            },
+          },
+        },
       },
     },
   },
