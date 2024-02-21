@@ -1283,6 +1283,9 @@ const roles = {
         },
       },
       armor: {
+        old_scarf: {
+          plus_max_concentration_points: player_stats.consumable_points.max_concentration_points + 2,
+        },
         chain_mail: {
           speed_points: player_stats.speed_points + 1,
         },
