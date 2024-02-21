@@ -21,3 +21,5 @@ In summary, Tower of Challenges is a thrilling RPG that encapsulates the essence
 ### While in the alpha stage, we have exciting plans for the game's development. We aim to enhance existing features, introduce new content, and eventually transition to an MMORPG in the official 2.0 release
 
 ### Thank you for joining us on this alpha journey, and we look forward to your insights as we continue to refine and expand the Tower of Challenges
+
+If you want to know more about TOC (Tower of Challenges), come check out our project; You can find it on projects in this repository.
