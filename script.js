@@ -837,6 +837,56 @@ const player_bag = {
         },
       },
     },
+    pants:{
+      item_id: null,
+      item_name: null,
+      item_stats: {
+        plus: {
+          plus_defense_points: /*player_stats.defense_points +*/ null,
+          plus_max_health_points: /*player_stats.max_health_points +*/ null,
+          plus_speed_points: /*player_stats.speed_points +*/ null,
+          plus_agility_points: /*player_stats.agility_points +*/ null,
+          plus_strength_points: /*player_stats.strength_points +*/ null,
+          plus_range_damage_points: /*player_stats.range_damage_points +*/ null,
+          plus_hand_damage_points: /*player_stats.hand_damage_points +*/ null,
+          plus_intellectual_points: /*player_stats.intellectual_points +*/ null,
+          plus_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points +*/ null,
+          plus_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points +*/ null,
+          plus_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points +*/ null,
+        },
+        reduce: {
+          reduce_defense_points: /*player_stats.defense_points -*/ null,
+          reduce_max_health_points: /*player_stats.max_health_points -*/ null,
+          reduce_speed_points: /*player_stats.speed_points -*/ null,
+          reduce_agility_points: /*player_stats.agility_points -*/ null,
+          reduce_strength_points: /*player_stats.strength_points -*/ null,
+          reduce_range_damage_points:
+            /*player_stats.range_damage_points -*/ null,
+          reduce_hand_damage_points: /*player_stats.hand_damage_points -*/ null,
+          reduce_intellectual_points:
+            /*player_stats.intellectual_points -*/ null,
+          reduce_max_stamina_points:
+            /*player_stats.consumable_points.max_stamina_points -*/ null,
+          reduce_max_concentration_points:
+            /*player_stats.consumable_points.max_concentration_points -*/ null,
+          reduce_max_anger_points:
+            /*player_stats.consumable_points.max_anger_points -*/ null,
+        },
+      },
+      effect: {
+        good: {
+          plus: {},
+          descriptions: {},
+        },
+        bad: {
+          plus: {},
+          descriptions: {},
+        },
+      },
+    },
     boots: {
       item_id: null,
       item_name: null,
@@ -1309,8 +1359,8 @@ const roles = {
         empire_chain_mail: {
           status: {
             item_id: null,
-            item_name: "Chain Mail",
             item_class: "Chest Type Armor",
+            item_name: "Empire Chain Mail",
             descriptions: "You feel heavy, but safe.",
             item_effect: {
               plus_defense_points: player_stats.defense_points + 2,
@@ -1323,9 +1373,9 @@ const roles = {
         old_leather_pants: {
           status: {
             item_id: null,
-            item_name: null,
-            item_class: null,
-            descriptions: "It's old and it was used by other archers... Now it's yours",
+            item_class: "Pants Type Armor",
+            item_name: "Old Leather Pants",
+            descriptions: "It's old and it was used by other archers... Now it's yours.",
             item_effect: {
               plus_defense_points: player_stats.defense_points + 1,
               plus_speed_points: player_stats.defense_points + 1,
@@ -1333,9 +1383,10 @@ const roles = {
             },
           },
         },
-        iron_boots: {
-          
-          speed_points: player_stats.speed_points - 1,
+        empire_iron_boots: {
+          item_id: null,
+          item_name: "Empire Iron Boots",
+          plus_speed_points: player_stats.speed_points - 1,
           defense_points: player_stats.defense_points + 1,
         },
         leather_gloves: {
