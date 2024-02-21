@@ -1394,9 +1394,15 @@ const roles = {
             plus_hand_damage_points: player_stats.hand_damage_points + 1,
           },
         },
-        leather_gloves: {
-          concentration_points: player_stats.concentration_points + 2,
-          agility_points: player_stats.agility_points + 1,
+        old_leather_gloves: {
+          item_id: null,
+          item_class: "Gloves Type Armor",
+          item_name: "Old Leather Gloves",
+          descriptions: "Fit perfectly on your hand, feels firm.",
+          item_effect: {
+            plus_concentration_points: player_stats.concentration_points + 2,
+            plus_agility_points: player_stats.agility_points + 1,
+          },
         },
       },
       consumables: {
