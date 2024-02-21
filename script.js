@@ -1285,8 +1285,8 @@ const roles = {
       armor: {
         old_scarf: {
           status:{
-            item_class: "Cloak Type Armor",
             item_id: null,
+            item_class: "Cloak Type Armor",
             item_name: "Old Scarf",
             descriptions: "Remembers forgotten times... Feels like home.",
             effect:{
@@ -1294,8 +1294,18 @@ const roles = {
             },
           },
         },
-        chain_mail: {
-          speed_points: player_stats.speed_points + 1,
+        empire_chain_mail: {
+          status:{
+            item_id: null,
+            item_name: "Chain Mail",
+            item_class: "Chest Type Armor",
+            descriptions: "You feel heavy, but safe.",
+            item_effect:{
+              plus_defense_points: player_stats.defense_points + 2,
+              reduce_speed_points: player_stats.speed_points - 1,
+              plus_hand_damage_points: player_stats.hand_damage_points + 1,
+            },
+          },
         },
         leather_pants: {
           defense_points: player_stats.defense_points + 1,
