@@ -1316,6 +1316,7 @@ const roles = {
               plus_defense_points: player_stats.defense_points + 2,
               reduce_speed_points: player_stats.speed_points - 1,
               plus_hand_damage_points: player_stats.hand_damage_points + 1,
+              reduce_agility_points: player_stats.agility_points - 1,
             },
           },
         },
@@ -1324,14 +1325,16 @@ const roles = {
             item_id: null,
             item_name: null,
             item_class: null,
-            descriptions: "It's old and used by other archers... Now it's yours",
+            descriptions: "It's old and it was used by other archers... Now it's yours",
             item_effect: {
               plus_defense_points: player_stats.defense_points + 1,
               plus_speed_points: player_stats.defense_points + 1,
+              plus_agility_points: player_stats.agility_points + 1,
             },
           },
         },
         iron_boots: {
+          
           speed_points: player_stats.speed_points - 1,
           defense_points: player_stats.defense_points + 1,
         },
