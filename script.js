@@ -1259,13 +1259,17 @@ const roles = {
         move_name: "Surprise Punch",
         damage_points: player_stats.hand_damage_points,
         cost: player_stats.consumable_points.current_anger_points - 2,
-        descriptions: "You surprise your target by giving a punch very fast in the face... they don't know how to react... They'r attack was cancelled this turn",
+        descriptions:
+          "You surprise your target by giving a punch very fast in the face... they don't know how to react... They'r attack was cancelled this turn",
       },
-      heavy_shot:{
+      heavy_shot: {
         move_name: "Heavy Shot",
         damage_points: player_stats.range_damage_points * 2,
-        cost: player_stats.consumable_points.current_concentration_points - player_stats.consumable_points.max_concentration_points,
-        descriptions: "You use all your strength and concentration to push your bow till its limits to double the damage of your attack, but it reduce your chance of damage by half",
+        cost:
+          player_stats.consumable_points.current_concentration_points -
+          player_stats.consumable_points.max_concentration_points,
+        descriptions:
+          "You use all your strength and concentration to push your bow till its limits to double the damage of your attack, but it reduce your chance of damage by half",
       },
     },
     start_bag: {
@@ -1283,33 +1287,49 @@ const roles = {
         },
       },
       armor: {
+        no_helmet: {
+          item_id: "1-0000",
+          item_class: "No Armor",
+          item_name: "None",
+          descriptions: null,
+          effect: null,
+        },
         old_scarf: {
-          status:{
+          status: {
             item_id: null,
             item_class: "Cloak Type Armor",
             item_name: "Old Scarf",
             descriptions: "Remembers forgotten times... Feels like home.",
-            effect:{
-              plus_max_concentration_points: player_stats.consumable_points.max_concentration_points + 2,
+            effect: {
+              plus_max_concentration_points:
+                player_stats.consumable_points.max_concentration_points + 2,
             },
           },
         },
         empire_chain_mail: {
-          status:{
+          status: {
             item_id: null,
             item_name: "Chain Mail",
             item_class: "Chest Type Armor",
             descriptions: "You feel heavy, but safe.",
-            item_effect:{
+            item_effect: {
               plus_defense_points: player_stats.defense_points + 2,
               reduce_speed_points: player_stats.speed_points - 1,
               plus_hand_damage_points: player_stats.hand_damage_points + 1,
             },
           },
         },
-        leather_pants: {
-          defense_points: player_stats.defense_points + 1,
-          speed_points: player_stats.defense_points + 1,
+        old_leather_pants: {
+          status: {
+            item_id: null,
+            item_name: null,
+            item_class: null,
+            descriptions: "It's old and used by other archers... Now it's yours",
+            item_effect: {
+              plus_defense_points: player_stats.defense_points + 1,
+              plus_speed_points: player_stats.defense_points + 1,
+            },
+          },
         },
         iron_boots: {
           speed_points: player_stats.speed_points - 1,
@@ -1326,7 +1346,9 @@ const roles = {
           item_name: player_bag.consumables.medium_healing_potion.item_name,
           item_stats: {
             item_effect: {
-              heals: player_bag.consumables.medium_healing_potion.item_stats.item_effect.heals,
+              heals:
+                player_bag.consumables.medium_healing_potion.item_stats
+                  .item_effect.heals,
               amount: 3,
             },
           },
@@ -1335,8 +1357,9 @@ const roles = {
           item_id: player_bag.consumables.sandCurtain.item_id,
           item_name: player_bag.consumables.sandCurtain.item_name,
           item_stats: {
-            item_effect:{
-              stunt: player_bag.consumables.sandCurtain.item_stats.item_effect.stunt,
+            item_effect: {
+              stunt:
+                player_bag.consumables.sandCurtain.item_stats.item_effect.stunt,
               amount: 3,
             },
           },
