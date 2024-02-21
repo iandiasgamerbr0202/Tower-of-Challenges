@@ -1284,7 +1284,15 @@ const roles = {
       },
       armor: {
         old_scarf: {
-          plus_max_concentration_points: player_stats.consumable_points.max_concentration_points + 2,
+          status:{
+            item_class: "Cloak Type Armor",
+            item_id: null,
+            item_name: "Old Scarf",
+            descriptions: "Remembers forgotten times... Feels like home.",
+            effect:{
+              plus_max_concentration_points: player_stats.consumable_points.max_concentration_points + 2,
+            },
+          },
         },
         chain_mail: {
           speed_points: player_stats.speed_points + 1,
