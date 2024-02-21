@@ -1385,9 +1385,14 @@ const roles = {
         },
         empire_iron_boots: {
           item_id: null,
+          item_class: "Boots Type Armor",
           item_name: "Empire Iron Boots",
-          plus_speed_points: player_stats.speed_points - 1,
-          defense_points: player_stats.defense_points + 1,
+          descriptions: "Heavy and comfy, the coat of arms is shining, even though these boots are rusted.",
+          item_effect: {
+            reduce_speed_points: player_stats.speed_points - 1,
+            plus_defense_points: player_stats.defense_points + 1,
+            plus_hand_damage_points: player_stats.hand_damage_points + 1,
+          },
         },
         leather_gloves: {
           concentration_points: player_stats.concentration_points + 2,
