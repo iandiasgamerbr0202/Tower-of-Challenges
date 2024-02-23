@@ -1581,6 +1581,7 @@ const _roles = {
     _moves: {},
     _start_bag: {},
   }, // isn't complete
+  },
 };
 const _player_moves = {
   _common_move: {
@@ -1676,7 +1677,7 @@ const _player_moves = {
     _flee: {}, // Unfinished;
   },
 };
-_const player_turn = {
+const _player_turn = {
   _stunned: false,
   _proceed: null, // true or false
 };
