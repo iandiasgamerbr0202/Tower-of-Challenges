@@ -1458,6 +1458,7 @@ const _roles = {
         _descriptions: "You set a trap on the battle field and the first who attack you will be trapped",
         _trapped_by: 3,
         _cost: _player_stats._consumable_points._current_stamina_points - 2,
+      },
     },
     _start_bag: {},
   }, // stats complete, moves half-step, start_bag missing
@@ -1581,7 +1582,6 @@ const _roles = {
     _moves: {},
     _start_bag: {},
   }, // isn't complete
-  },
 };
 const _player_moves = {
   _common_move: {
