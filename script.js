@@ -1272,7 +1272,7 @@ const _player_bag = {
   },
 };
 const _roles = {
-  _archer: {
+  _imperial_archer: {
     _title: "Imperial Archer",
     _stats: {
       _plus_defense_points: 1,
