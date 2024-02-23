@@ -1290,31 +1290,31 @@ const _player_bag = {
     _arrows: {
       _common: {
         _cost: 5,
-        _damage_points: player_stats.range_damage_points,
+        _damage_points: _player_stats._range_damage_points,
       },
       _quick: {
         _cost: 2.5,
-        _damage_points: player_stats.range_damage_points,
+        _damage_points: _player_stats._range_damage_points,
       },
       _heavy: {
         _cost: 10,
-        _damage_points: player_stats.range_damage_points,
+        _damage_points: _player_stats._range_damage_points,
       },
       _poisoned: {
         _cost: 13,
-        _damage_points: player_stats.range_damage_points,
+        _damage_points: _player_stats._range_damage_points,
         _poisoned_by: 3,
-        _damage_point_by_turn: player_stats.range_damage_points / 2,
+        _damage_point_by_turn: _player_stats._range_damage_points / 2,
       },
       _fire: {
         _cost: 13.5,
-        _damage_points: player_stats.range_damage_points,
+        _damage_points: _player_stats._range_damage_points,
         _fire_by: 3,
-        _damage_point_by_turn: player_stats.range_damage_points / 2,
+        _damage_point_by_turn: _player_stats._range_damage_points / 2,
       },
       _explosive: {
         _cost: 15,
-        _damage_points: player_stats.range_damage_points,
+        _damage_points: _player_stats._range_damage_points,
         _weakness: {
           _defense_points: -5,
           _damage_points: -5,
@@ -1323,7 +1323,7 @@ const _player_bag = {
       },
       _stunt: {
         _amount: 20,
-        _damage_points: player_stats.range_damage_points,
+        _damage_points: _player_stats._range_damage_points,
         _turns_stunned: 3,
       },
     },
