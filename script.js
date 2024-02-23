@@ -5,14 +5,14 @@ const _treat_target = function treat_target() {
     _yourTreatWorked();
   }
 };
-const _yourTreatDintWorked = function positivePoint() {
-  _player_target_stats.pride_points += 1;
+const _yourTreatDintWorked = function _positivePoint() {
+  _player_target_stats._consumable_points._current_anger_points += 1;
   return console.log(
     `${_player_target_stats._name} din't payed attention on what you said.`
   );
 }; //Player treat the target but the target will get more angry or confident;
-const _yourTreatWorked = function negativePoint() {
-  _player_target_stats._pride_points -= 1;
+const _yourTreatWorked = function _negativePoint() {
+  _player_target_stats._consumable_points._current_anger_points -= 1;
   return console.log(
     `${_player_target_stats._name} was slightly shaken about what you said.`
   );
@@ -1328,7 +1328,7 @@ const _roles = {
           _agility_points: _player_stats._agility_points + 2,
           _effect: {
             _effect_name: "Stone Hands",
-            _hand_damage_points: _player_stats.hand_damage_points + 2,
+            _hand_damage_points: _player_stats._hand_damage_points + 2,
             _slowness: _player_stats._agility_points - 1,
           },
         },
