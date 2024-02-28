@@ -1,6 +1,9 @@
 # Tower of Challenges
+
 <br>
+
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
 ## Are You Ready?
 
 Tower of Challenges offers a captivating journey in the realm of roguelike RPGs. Set in a fantastical world devoid of magic, the game introduces an extra layer of complexity to unfolding adventures. As you embark on your journey, meticulous character crafting awaits, with choices spanning a diverse array of classes, skills, and attributes.
