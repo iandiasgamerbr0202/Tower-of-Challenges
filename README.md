@@ -1,9 +1,5 @@
 <h1 align="center"> Tower of Challenges </h1>
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
-![Índice](MIT)
-# Are You Ready?
-
 Tower of Challenges offers a captivating journey in the realm of roguelike RPGs. Set in a fantastical world devoid of magic, the game introduces an extra layer of complexity to unfolding adventures. As you embark on your journey, meticulous character crafting awaits, with choices spanning a diverse array of classes, skills, and attributes.
 
 The absence of magic doesn't dampen the excitement; instead, it introduces a unique set of challenges that demand strategic thinking and adaptability. In the Tower of Challenges, players face myriad obstacles, puzzles, and adversaries, each more formidable than the last. The lack of magical abilities requires reliance on skillful combat techniques, clever problem-solving, and resourceful decision-making.
@@ -12,7 +8,7 @@ The tower itself stands as a mysterious and foreboding backdrop, with each level
 
 Furthermore, the game integrates character progression and customization, allowing you to enhance skills, acquire new abilities, and discover powerful artifacts. The Tower of Challenges rewards both strategy and courage, making each decision a critical part of your character's development.
 
-In summary, Tower of Challenges is a thrilling RPG that encapsulates the essence of adventure in a magic-deprived world, challenging players to overcome obstacles through wit, skill, and determination. So, let me ask you again: Are you ready to conquer the Tower and prove your mettle in this enchantment-free realm?
+In summary, Tower of Challenges is a thrilling RPG that encapsulates the essence of adventure in a magic-deprived world, challenging players to overcome obstacles through wit, skill, and determination. So, let me ask you: Are you ready to conquer the Tower and prove your mettle in this enchantment-free realm?
 
 ## Tower of Challenges is currently in the alpha stage of development. As we work towards creating a captivating RPG experience, please keep in mind that this version may contain bugs, incomplete features, and other aspects typical of an alpha release
 
