@@ -1352,7 +1352,7 @@ const _roles = {
         _move_name: "Dry Shot",
         _cost:
           _player_stats._consumable_points - _player_selected_arrow._arrow_cost,
-        _damage_points: player_stats.range_damage_points,
+        _damage_points: _player_stats.range_damage_points,
         _descriptions: "A simple shot, without mercy.",
       },
       _switch_arrow: {
@@ -1371,8 +1371,8 @@ const _roles = {
       _heavy_shot: {
         _move_name: "Heavy Shot",
         _damage_points:
-          player_stats.range_damage_points +
-          (player_stats.hand_damage_points % 2),
+          _player_stats._range_damage_points +
+          (_player_stats._hand_damage_points % 2),
         _cost:
           _player_stats._consumable_points._current_concentration_points -
           _player_stats._consumable_points._max_concentration_points,
