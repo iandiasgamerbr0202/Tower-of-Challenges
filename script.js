@@ -1350,9 +1350,8 @@ const _roles = {
       },
       _dry_shot: {
         _move_name: "Dry Shot",
-        _cost:
-          _player_stats._consumable_points - _player_selected_arrow._arrow_cost,
-        _damage_points: _player_stats.range_damage_points,
+        _cost: _player_stats._consumable_points - _player_selected_arrow._arrow_cost,
+        _damage_points: _player_stats._range_damage_points,
         _descriptions: "A simple shot, without mercy.",
       },
       _switch_arrow: {
@@ -1366,25 +1365,21 @@ const _roles = {
         _damage_points: _player_stats._hand_damage_points,
         _cost: _player_stats._consumable_points._current_anger_points - 2,
         _descriptions:
-          "You surprise your target by giving a punch very fast in the face... they don't know how to react... They'r attack was cancelled this turn",
+          "You surprise your target by giving a punch very fast in the face... they don't know how to react... They'r attack was cancelled.",
       },
       _heavy_shot: {
         _move_name: "Heavy Shot",
-        _damage_points:
-          _player_stats._range_damage_points +
-          (_player_stats._hand_damage_points % 2),
-        _cost:
-          _player_stats._consumable_points._current_concentration_points -
-          _player_stats._consumable_points._max_concentration_points,
-        _descriptions:
-          "You use all your strength and concentration to push your bow till its limits to double the damage of your attack, but it reduce your chance of damage by half",
+        _damage_points: _player_stats._range_damage_points + (_player_stats._hand_damage_points),
+        _cost: _player_stats._consumable_points._current_concentration_points - _player_stats._consumable_points._max_concentration_points,
+        _descriptions: "You use all your strength and concentration to push your bow till its limits to double the damage of your attack, but it reduce your chance of damage by half",
       },
     },
     _start_bag: {
       _weapon: {
         _common_arrow: _player_bag._weapons._arrows._common,
         _heavy_arrow: _player_bag._weapons._arrows._heavy,
-        _imperial_bow: {
+        _old_imperial_bow: {
+          _item_id: "15-0001",
           _range_damage_points: _player_stats._range_damage_points + 5,
           _agility_points: _player_stats._agility_points + 2,
           _effect: {
@@ -1404,8 +1399,8 @@ const _roles = {
         },
         _old_scarf: {
           _status: {
-            _item_id: null,
-            _item_class: "Cloak Type Armor",
+            _item_id: "2-0001",
+            _item_class: "Cloak Type Clothes",
             _item_name: "Old Scarf",
             _descriptions: "It's old and dusted.",
             _effect: {
@@ -1414,12 +1409,12 @@ const _roles = {
             },
           },
         },
-        _empire_chain_mail: {
+        _old_rusted_empire_chain_mail: {
           _status: {
-            _item_id: null,
+            _item_id: "3-0001",
             _item_class: "Chest Type Armor",
             _item_name: "Empire Chain Mail",
-            _descriptions: "You feel heavy, but safe.",
+            _descriptions: "You feel heavy, but safe... smell like rust",
             _item_effect: {
               _plus_defense_points: _player_stats._defense_points + 2,
               _reduce_speed_points: _player_stats._speed_points - 1,
@@ -1430,20 +1425,19 @@ const _roles = {
         },
         _old_leather_pants: {
           _status: {
-            _item_id: null,
-            _item_class: "Pants Type Armor",
+            _item_id: "4-0001",
+            _item_class: "Pants Type Clothes",
             _item_name: "Old Leather Pants",
-            _descriptions:
-              "It's old and it was used by other archers... Now it's yours.",
+            _descriptions: "It's old and it was used by other archers... Now it's yours.",
             _item_effect: {
               _plus_defense_points: _player_stats._defense_points + 1,
-              _plus_speed_points: _player_stats._defense_points + 1,
+              _plus_speed_points: _player_stats._speed_points + 1,
               _plus_agility_points: _player_stats._agility_points + 1,
             },
           },
         },
-        _empire_iron_boots: {
-          _item_id: null,
+        _old_rusted_empire_iron_boots: {
+          _item_id: "5-0001",
           _item_class: "Boots Type Armor",
           _item_name: "Empire Iron Boots",
           _descriptions:
@@ -1455,8 +1449,8 @@ const _roles = {
           },
         },
         _old_leather_gloves: {
-          _item_id: null,
-          _item_class: "Gloves Type Armor",
+          _item_id: "6-0001",
+          _item_class: "Gloves Type Clothes",
           _item_name: "Old Leather Gloves",
           _descriptions: "Fit perfectly on your hand, feels firm.",
           _item_effect: {
