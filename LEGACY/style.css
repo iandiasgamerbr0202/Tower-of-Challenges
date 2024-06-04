@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'MedievalSharp_Book';
+    src: url('MedievalSharp/MedievalSharp-Book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MedievalSharp_Book_Oblique';
+    src: url('MedievalSharp/MedievalSharp-BookOblique.ttf');
+}
+
+@font-face {
+    font-family: 'MedievalSharp_Bold';
+    src: url('MedievalSharp/MedievalSharp-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'MedievalSharp_Bold_Oblique';
+    src: url('MedievalSharp/MedievalSharp-BoldOblique.ttf');
+}
+:root{
+    --MedievalSharp_Book: 'MedievalSharp_Book';
+    --MedievalSharp_Book_Oblique: 'MedievalSharp_Book_Oblique';
+    --MedievalSharp_Bold: 'MedievalSharp_Bold';
+    --MedievalSharp_Bold_Oblique: 'MedievalSharp_Bold_Oblique';
+    --Narrator: black;
+    --Smiley: rgb(82, 0, 82);
+    --Spike: blue;
+    --Default: black;
+}
+#roof {
+    text-align: center;
+    font-family: var(--MedievalSharp_Book);
+}
+#welcome_to_TOC {
+    font-size:xx-large;
+    font-family: var(--MedievalSharp_Book);
+}
+
+.game_button {
+    font-family: var(--MedievalSharp_Book);
+}
