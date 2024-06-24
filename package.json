@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/iandiasgamerbr0202/Tower-of-Challenges/issues"
   },
-  "homepage": "https://github.com/iandiasgamerbr0202/Tower-of-Challenges#readme"
+  "homepage": "https://github.com/iandiasgamerbr0202/Tower-of-Challenges#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.3"
+  }
 }
