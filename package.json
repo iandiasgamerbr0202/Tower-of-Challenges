@@ -1,0 +1,22 @@
+{
+  "name": "tower-of-challenges",
+  "version": "1.0.0",
+  "description": "RPG",
+  "main": "app.js",
+  "scripts": {
+    "test": "dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iandiasgamerbr0202/Tower-of-Challenges.git"
+  },
+  "keywords": [
+    "RPG"
+  ],
+  "author": "Ian Dias",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/iandiasgamerbr0202/Tower-of-Challenges/issues"
+  },
+  "homepage": "https://github.com/iandiasgamerbr0202/Tower-of-Challenges#readme"
+}
